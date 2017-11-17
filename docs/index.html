@@ -4,12 +4,19 @@
         <title>The Jolley Foundation — a family foundation serving Greenville, South Carolina</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style type="text/css">
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
             body {
                 background: #fff;
-                color: #000;
+                color: #333;
+                max-width: 36rem;
                 margin: 0 auto;
                 padding: 1rem;
                 font-family: Palatino Linotype, Palatino, Georgia, serif;
+                line-height: 1.5;
             }
             h1 {
                 margin: 1rem auto;
@@ -17,38 +24,109 @@
                 padding: 0;
             }
             h1 img {
-                width: 500px;
-                max-width: 100%;
+                width: 100%;
             }
+
+            h2 {
+                font-size: 1.25rem;
+                margin-bottom: 0.25rem;
+                font-style: italic;
+            }
+            h3 {
+                font-size: 1.1rem;
+                margin: 1rem 0 0.25rem;
+            }
+
             section {
-                max-width: 26rem;
-                margin: 0 auto;
+                border-bottom: 1px solid #eee;
+                padding: 2rem 3rem;
             }
+            section:last-child {
+                border-bottom: none;
+            }
+
             p {
                 margin: 1rem 0;
-                line-height: 1.5;
+            }
+            p:first-child {
+                margin-top: 0;
+            }
+            p:last-child {
+                margin-bottom: 0;
             }
             a {
                 color: #008BC7;
             }
 
-            .notice {
-                background-color: #FFFCE5;
-                border-left: 5px solid #FEF39A;
-                padding: 0.5rem 0.5rem 0.5rem 1rem;
-                margin: 1rem 0;
+            nav {
+                padding: 2rem;
+                border-bottom: 1px solid #eee;
+                font-style: italic;
             }
-            .notice p:first-child {
+            nav ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                display: table;
+                width: 100%;
+            }
+            nav ul li {
+                display: table-cell;
+                text-align: center;
+            }
+
+            ul {
+                padding-left: 2rem;
+            }
+            li {
+                margin-bottom: 0.25rem;
+                line-height: 1.25;
+            }
+            li:last-child {
+                margin-bottom: 0;
+            }
+
+            dd {
+                font-style: italic;
+                font-size: 0.9rem;
+                margin-bottom: 0.5rem;
+            }
+            dd:last-child {
+                margin-bottom: 0;
+            }
+            dt .title {
+                font-weight: bold;
+                font-size: 0.9rem;
+            }
+
+            blockquote {
+                margin: 0;
+                padding: 0;
+            }
+
+            #contact {
+                border-bottom: 0;
+            }
+            #contact p {
                 margin-top: 0;
             }
-            .notice p:last-child {
-                margin-bottom: 0;
+            address {
+                font-style: normal;
+            }
+
+            .notice {
+                background-color: #FFFCE5;
+                /*border-left: 5px solid #FEF39A;*/
+                padding: 0.5rem 1.5rem;
+                margin-left: -1.5rem;
+                margin-right: -1.5rem;
+                font-weight: bold;
             }
         </style>
     </head>
     <body>
         <!-- cat docs/logo.png | base64 -b 80 -->
-        <h1><img src="data:image/png;base64,
+        <h1 class="overhang"><img src="data:image/png;base64,
 iVBORw0KGgoAAAANSUhEUgAAA+gAAAH9CAIAAAAGRcGyAAABGGlDQ1BJQ0MgUHJvZmlsZQAAKJFjYGBS
 SCwoyGESYGDIzSspCnJ3UoiIjFJgf8DAwyALxBoM6onJxQWOAQE+DEAAo1HBt2sMjCD6si7ILEx5vIAr
 JbU4GUj/AeLs5IKiEgYGxgwgW7m8pADE7gGyRZKywewFIHYR0IFA9hYQOx3CPgFWA2HfAasJCXIGsj8A
@@ -930,16 +1008,90 @@ NNoWiybS0mtG/ePzh8OR8khZaWlpWXl5aXlZeUnoBLMcR9Myjd1PbOMPBBBAAAEEEEAAAQQQ+EsF/gct
 t8xSMujurQAAAABJRU5ErkJggg==" alt="Jolley Foundation"></h1>
 
         <section>
-            <p>The Jolley Foundation, a family foundation established in 1947 in
-            Greenville, South Carolina, supports efforts to improve the lives of
-            Greenville County's most vulnerable residents.</p>
+            <p>The Jolley Foundation is a family foundation established in 1947 in Greenville, South Carolina.</p>
+        </section>
 
-            <p>The foundation considers grant proposals twice a year. 2017 proposal
-            deadlines are April 1 and September 1.
-            <a href="https://www.wellsfargo.com/private-foundations/jolley-foundation">Apply online</a>.</p>
+        <nav class="overhang">
+            <ul>
+                <li><a href="#vision">Our vision</a></li>
+                <li><a href="#mission">Our mission</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </nav>
 
-            <p>For information about the foundation or its grant process, email
-            <a href="mailto:info@jolleyfoundation.org">info@jolleyfoundation.org</a>.</p>
+        <section id="vision">
+            <h2>Our vision</h2>
+            <blockquote>A just, compassionate and vibrant community.</blockquote>
+        </section>
+
+        <section id="mission">
+            <h2>Our mission</h2>
+            <blockquote>
+                <p>We will advance efforts to eliminate the root causes and
+                effects of poverty and discrimination by:</p>
+                <ul>
+                    <li>Seeking systemic and sustainable solutions to historically intractable problems</li>
+                    <li>Investing in nonprofit organizations committed to building their capacity to serve community needs</li>
+                    <li>Pursuing opportunities for collaborative philanthropic effort</li>
+                </ul>
+            </blockquote>
+        </section>
+
+        <section>
+            <p>We are proud to support and partner with nonprofit
+            organizations, foundations, and cross-sector coalitions in
+            Greenville and Upstate South Carolina that share our aspirations
+            for our community.</p>
+
+            <p class="notice">Check back in early 2018 for information about our new grantmaking
+            process.</p>
+
+            <p>For more information about the Foundation, please contact us at
+            <a href="mailto:info@jolleyfoundation.org">info@jolleyfoundation.org</a>.
+            You can also find general information at
+            <a href="https://www.wellsfargo.com/private-foundations/jolley-foundation">https://www.wellsfargo.com/private-foundations/jolley-foundation</a>.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+
+            <h3>Board of Trustees</h3>
+            <dl>
+                <dt>James McDuffie Bruce III &mdash; <span class="title">Chair</span></dt>
+                <dd>Greenville, South Carolina</dd>
+
+                <dt>Jolley Bruce Christman &mdash; <span class="title">Secretary</span></dt>
+                <dd>Philadelphia, Pennsylvania</dd>
+
+                <dt>Andrew Christman</dt>
+                <dd>Philadelphia, Pennsylvania</dd>
+
+                <dt>James McDuffie Bruce IV</dt>
+                <dd>Memphis, Tennessee</dd>
+            </dl>
+
+            <h3>Program Officer</h3>
+            <dl>
+                <dt>Tish Young McCutchen</dt>
+                <dd>Greenville, South Carolina</dd>
+            </dl>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <h3>Email</h3>
+            <p><a href="mailto:info@jolleyfoundation.org">info@jolleyfoundation.org</a></p>
+
+            <h3>Mailing Address</h3>
+            <address>
+                PO Box 8182<br>
+                Greenville SC 29604
+            </address>
+
+            <h3>Telephone</h3>
+            <p>864.509.0673</p>
         </section>
     </body>
 
