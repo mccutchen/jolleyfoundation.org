@@ -48,7 +48,7 @@
             p {
                 margin: 1rem 0;
             }
-            p:first-child {
+            p:first-child, h2+p {
                 margin-top: 0;
             }
             p:last-child {
@@ -62,17 +62,6 @@
                 padding: 2rem;
                 border-bottom: 1px solid #eee;
                 font-style: italic;
-            }
-            nav ul {
-                margin: 0;
-                padding: 0;
-                list-style-type: none;
-                display: table;
-                width: 100%;
-            }
-            nav ul li {
-                display: table-cell;
-                text-align: center;
             }
 
             ul {
@@ -121,6 +110,27 @@
                 margin-left: -1.5rem;
                 margin-right: -1.5rem;
                 font-weight: bold;
+            }
+
+            @media only screen and (min-device-width: 700px) {
+                nav ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+                    display: table;
+                    width: 100%;
+                }
+                nav ul li {
+                    display: table-cell;
+                    text-align: center;
+                }
+            }
+
+            @media only screen and (max-device-width: 700px) {
+                section, nav {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
             }
         </style>
     </head>
@@ -1015,6 +1025,7 @@ t8xSMujurQAAAABJRU5ErkJggg==" alt="Jolley Foundation"></h1>
             <ul>
                 <li><a href="#vision">Our vision</a></li>
                 <li><a href="#mission">Our mission</a></li>
+                <li><a href="#mission">Our work</a></li>
                 <li><a href="#about">About us</a></li>
                 <li><a href="#contact">Contact us</a></li>
             </ul>
@@ -1022,23 +1033,22 @@ t8xSMujurQAAAABJRU5ErkJggg==" alt="Jolley Foundation"></h1>
 
         <section id="vision">
             <h2>Our vision</h2>
-            <blockquote>A just, compassionate and vibrant community.</blockquote>
+            <p>A just, compassionate and vibrant community.</p>
         </section>
 
         <section id="mission">
             <h2>Our mission</h2>
-            <blockquote>
-                <p>We will advance efforts to eliminate the root causes and
-                effects of poverty and discrimination by:</p>
-                <ul>
-                    <li>Seeking systemic and sustainable solutions to historically intractable problems</li>
-                    <li>Investing in nonprofit organizations committed to building their capacity to serve community needs</li>
-                    <li>Pursuing opportunities for collaborative philanthropic effort</li>
-                </ul>
-            </blockquote>
+            <p>We will advance efforts to eliminate the root causes and
+            effects of poverty and discrimination by:</p>
+            <ul>
+                <li>Seeking systemic and sustainable solutions to historically intractable problems</li>
+                <li>Investing in nonprofit organizations committed to building their capacity to serve community needs</li>
+                <li>Pursuing opportunities for collaborative philanthropic effort</li>
+            </ul>
         </section>
 
-        <section>
+        <section id="work">
+            <h2>Our work</h2>
             <p>We are proud to support and partner with nonprofit
             organizations, foundations, and cross-sector coalitions in
             Greenville and Upstate South Carolina that share our aspirations
@@ -1054,7 +1064,7 @@ t8xSMujurQAAAABJRU5ErkJggg==" alt="Jolley Foundation"></h1>
         </section>
 
         <section id="about">
-            <h2>About Us</h2>
+            <h2>About us</h2>
 
             <h3>Board of Trustees</h3>
             <dl>
@@ -1079,12 +1089,12 @@ t8xSMujurQAAAABJRU5ErkJggg==" alt="Jolley Foundation"></h1>
         </section>
 
         <section id="contact">
-            <h2>Contact Us</h2>
+            <h2>Contact us</h2>
 
             <h3>Email</h3>
             <p><a href="mailto:info@jolleyfoundation.org">info@jolleyfoundation.org</a></p>
 
-            <h3>Mailing Address</h3>
+            <h3>Mailing address</h3>
             <address>
                 PO Box 8182<br>
                 Greenville SC 29604
